@@ -1,1 +1,3 @@
 # zlibify
+
+All Rights Reserved
