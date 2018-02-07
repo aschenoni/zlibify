@@ -1,0 +1,62 @@
+$softBlack: #333;
+
+html, body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Open-Sans', sans-serif;
+	background-color: #F7F7F7;
+}
+
+
+.body {
+	padding-left: 20px;
+	padding-right: 20px;
+
+	.editor-panel {
+		margin: 1px; //Offset the border in #brace-editor
+		#brace-editor {
+			border: 1px solid #DDDDDD;
+		}
+	}
+}
+
+.header {
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: #EFEFEF;
+	border-bottom: 1px solid #87BBA2;
+	color: $softBlack;
+	.header-item {
+
+	}
+}
+
+.btn {
+	border: none;
+	background: none;
+	cursor: pointer;
+	padding: 25px 80px;
+	display: inline-block;
+	margin: 15px 30px;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+
+	&:after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+
+	&:hover {
+		color: #0e83cd;
+		background: #fff;
+	}
+}

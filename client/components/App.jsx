@@ -1,10 +1,10 @@
 import React from 'react';
+import Header from './Header.jsx';
+import Body from './Body.jsx';
+import Footer from './Footer.jsx';
 
 export default class App extends React.Component {
 	render(){
-		return (
-		     <div style={{textAlign: 'center'}}>
-		        <h1>Hello World</h1>
-		      </div>);
+		return (<div><Header /><Body /><Footer /></div>);
 	}
 }
