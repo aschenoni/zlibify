@@ -1,0 +1,31 @@
+$softBlack: #333;
+
+html, body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Open-Sans', sans-serif;
+	background-color: #F7F7F7;
+}
+
+.body {
+	padding-left: 20px;
+	padding-right: 20px;
+
+	.editor-panel {
+		margin: 1px; //Offset the border in #brace-editor
+		#brace-editor {
+			border: 1px solid #DDDDDD;
+		}
+	}
+}
+
+.header {
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: #EFEFEF;
+	border-bottom: 1px solid #87BBA2;
+	color: $softBlack;
+	.header-item {
+		
+	}
+}

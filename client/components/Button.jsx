@@ -1,12 +1,12 @@
 import React from 'react';
+import '../assets/styles/button.scss';
 
 export default class Button extends React.Component {
-	constructor(props){
-		super(props);
-		this.label = props.label;
+	handleClick () {
+		this.props.clickHandler(this.props.label);
 	}
 
 	render () {
-		return (<div className="btn">{this.label}</div>)
+		return (<div className="button button-primary ripple" onClick={this.handleClick.bind(this)} >{this.props.label}</div>)
 	}
 }

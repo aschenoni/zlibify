@@ -7,6 +7,8 @@ export default class Editor extends React.Component {
 			<AceEditor
 				width="100%"
 				height="250px"
+				onChange={this.props.onChange}
+				value={this.props.value}
 				showPrintMargin={false}
 			/>			
 		</div>)
